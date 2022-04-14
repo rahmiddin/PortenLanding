@@ -1,0 +1,134 @@
+@import "null.scss";
+
+
+
+.wrapper{
+   overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+
+._conteiner{
+   max-width: 1109px;
+   margin: 0 auto;
+   box-sizing: content-box;
+}
+
+//-------------------header-------------------------------//
+
+.header {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 50px;
+   width: 100%;
+   min-height: 44px;
+   background-color: #000000;
+   font-family: 'PT Sans';
+   font-weight: 400;
+   font-size: 12px;
+   box-sizing: border-box;
+}
+.header__up {
+   width: 100%;
+   background-color: #000000;
+}
+.header__up-contacts {
+}
+.contacts {
+}
+.header-up__conteiner {
+   display: flex;
+   justify-content: space-between;
+   padding: 14px 15px 14px 15px;
+}
+.header-up__infos{
+   display: flex;
+
+}
+
+.header-up__info {
+   color: grey;
+}
+.header-up__infos:not(:last-child){
+   .header-up__info::after{
+      content: "|";
+      margin-left: 14px;
+      margin-right: 14px;
+   }
+}
+
+.header-up__infos::before{
+   content: url(/img/header/Vector.png);
+   margin-right:15px;
+}
+
+.number {
+}
+.header-text {
+}
+.time {
+}
+
+.header-up__registration {
+   display: flex;
+}
+.header-up__registration-logo {
+   padding-right: 10px;
+}
+.header-up__registration-link {
+   color: grey;
+}
+
+.header-up__registration-link:not(:last-child){
+   .header-up__registration-link::after{
+      content: '/';
+      margin: 0px 12px;
+   }
+}
+
+
+
+
+
+
+.header-bottom{
+   background-color: #0F0F0F;
+   max-height: 80px;
+}
+.header-bottom__conteiner {
+   padding: 0px 15px;
+   display: flex;
+   justify-content: space-between;
+}
+.haeder-bottom__left-side{
+   display: flex;
+   margin: 25px 0px 30px 0px;
+}
+.haeder-bottom__right-side{
+   display: flex;
+   margin: 32px 0px 30px 0px;
+   // font-family: 'PT Sans';
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+.header-bottom__logo {
+}
+.header-bottom__nav {
+   .header-bottom__link{
+      color:white;
+   }
+}
+
+.header-bottom__link:not(:last-child){
+   margin-right: 40px;
+}
+.header-bottom__icon {
+   margin-left: 60px;
+}
+.header-bottom__icon-link:not(:last-child){
+   margin-right:40px ;
+}
