@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 50px;
+  z-index: 500px;
   width: 100%;
   min-height: 44px;
   background-color: #000000;
@@ -211,4 +211,90 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-bottom__icon-link:not(:last-child) {
   margin-right: 40px;
+}
+
+.page {
+  margin-top: 124px;
+}
+
+.main-block {
+  min-height: 810px;
+  width: 100%;
+  color: white;
+  background-image: url(/img/main-block-intro/Rectangle3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-block__conteiner {
+  min-height: 810px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-block__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-block__square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 320px;
+  width: 320px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 173px;
+  border: 5px solid white;
+}
+
+.main-block__square-titel {
+  font-family: "Post No Bills Jaffna";
+  font-size: 64px;
+}
+
+.main-block__square-city {
+  font-size: 22px;
+}
+
+.main-block__square-line {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.main-block__text {
+  font-family: "PT Sans";
+  font-size: 16px;
+  text-align: center;
+  line-height: 150%;
+  text-transform: uppercase;
 }

@@ -16,13 +16,15 @@
    box-sizing: content-box;
 }
 
+
 //-------------------header-------------------------------//
 
 .header {
+   // display: none;
    position: absolute;
    left: 0;
    top: 0;
-   z-index: 50px;
+   z-index: 500px;
    width: 100%;
    min-height: 44px;
    background-color: #000000;
@@ -35,10 +37,7 @@
    width: 100%;
    background-color: #000000;
 }
-.header__up-contacts {
-}
-.contacts {
-}
+
 .header-up__conteiner {
    display: flex;
    justify-content: space-between;
@@ -65,12 +64,6 @@
    margin-right:15px;
 }
 
-.number {
-}
-.header-text {
-}
-.time {
-}
 
 .header-up__registration {
    display: flex;
@@ -110,7 +103,6 @@
 .haeder-bottom__right-side{
    display: flex;
    margin: 32px 0px 30px 0px;
-   // font-family: 'PT Sans';
    font-size: 14px;
    text-transform: uppercase;
 }
@@ -131,4 +123,65 @@
 }
 .header-bottom__icon-link:not(:last-child){
    margin-right:40px ;
+}
+
+//--------------------main-block-----------------------------------//
+.page {
+   margin-top: 124px;
+}
+
+.main-block {
+   min-height: 810px;
+   width: 100%;
+   color: white;
+   background-image: url(/img/main-block-intro/Rectangle3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.main-block__conteiner {
+   min-height: 810px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main-block__body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.main-block__square {
+   display: flex;
+   flex-direction: column;
+   height: 320px;
+   width: 320px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 173px;
+   border: 5px solid white;
+}
+.main-block__square-titel {
+   font-family: 'Post No Bills Jaffna';
+   font-size: 64px;
+}
+.main-block__square-city {
+   font-size: 22px;
+}
+.main-block__square-line{
+   margin-top: 5px;
+   margin-bottom: 7px;
+}
+.main-block__text {
+   font-family: 'PT Sans';
+   font-size: 16px;
+   text-align: center;
+   line-height: 150%;
+   text-transform: uppercase;
+}
+.intro-block__image {
+}
+._ibg {
 }
