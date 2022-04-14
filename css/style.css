@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-up__infos::before {
-  content: url(/img/header/Vector.png);
+  content: url(../../img/header/Vector.png);
   margin-right: 15px;
 }
 
