@@ -145,6 +145,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   color: #464649;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__nav-button-link:not(:last-child) {
@@ -167,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .header__nav-button {
     margin-left: 50px;
+    display: none;
   }
 }
 .header__contacts {
@@ -234,9 +237,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 5px;
 }
 
+.page__main-intro {
+  max-height: 800px;
+}
+
 .intro__body {
   padding: 146px 0px 222px 0px;
   word-wrap: normal;
+  max-height: 800px;
 }
 
 .intro__title {
@@ -289,6 +297,28 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 70px;
   }
 }
+@media (max-width: 1355px) {
+  ._ibg {
+    opacity: 0.9;
+  }
+
+  .intro__title {
+    color: #16467D;
+  }
+}
+@media (max-width: 500px) {
+  .intro__title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 74px;
+  }
+
+  .intro__buttnon-link {
+    padding: 15px 40px 15px 40px;
+  }
+}
 .page__main-brends {
   height: 170px;
 }
@@ -305,6 +335,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  height: 170px;
 }
 
 .brends__title {
@@ -318,15 +350,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brends__name {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 1520px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .brends__name-img {
@@ -337,10 +363,31 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 92px;
 }
 
+@media (max-width: 650px) {
+  .brends__name-none {
+    width: 100%;
+  }
+}
+@media (max-width: 1530px) {
+  .brends__name {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .brends__name-img {
+    width: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .brends__name-img:not(:last-child) {
+    margin-right: 12px;
+  }
+}
 .page__main-services {
-  height: 761px;
+  min-height: 761px;
   width: 100%;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .services__conteiner {
@@ -475,5 +522,27 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 885px) {
   .services__title {
     text-align: center;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1015px) {
+  .services__work {
+    display: block;
+  }
+
+  .exaple-one {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 430px) {
+  .services__title {
+    text-align: center;
+    margin-top: 150px;
+  }
+}
+@media (max-width: 312px) {
+  .services__title {
+    text-align: center;
+    margin-top: 240px;
   }
 }
