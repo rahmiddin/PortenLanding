@@ -239,6 +239,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .page__main-intro {
   max-height: 800px;
+  background-image: url(../img/main-intro/first-screen.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 0;
 }
 
 .intro__body {
