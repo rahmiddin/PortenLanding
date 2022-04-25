@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Koulen&family=Montserrat:wght@400;500;600&family=Mukta+Vaani&family=Roboto&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Koulen&family=Montserrat:wght@400;500;600&family=Mukta+Vaani&family=Raleway:wght@700;900&family=Roboto&family=Work+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -90,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ._conteiner {
-  max-width: 1109px;
+  max-width: 1520px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -98,149 +100,201 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   position: absolute;
+  z-index: 50;
   left: 0;
   top: 0;
-  z-index: 500px;
   width: 100%;
-  min-height: 44px;
-  background-color: #000000;
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-size: 12px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  min-height: 80px;
+  background-color: white;
 }
 
-.header__up {
-  width: 100%;
-  background-color: #000000;
+.header__conteiner {
+  padding: 30px 0px;
 }
 
-.header-up__conteiner {
+.header__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 14px 15px 14px 15px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 5px;
 }
 
-.header-up__infos {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-up__info {
-  color: grey;
-}
-
-.header-up__infos:not(:last-child) .header-up__info::after {
-  content: "|";
-  margin-left: 14px;
-  margin-right: 14px;
-}
-
-.header-up__infos::before {
-  content: url(../img/header/Vector.png);
-  margin-right: 15px;
-}
-
-.header-up__registration {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-up__registration-logo {
-  padding-right: 10px;
-}
-
-.header-up__registration-link {
-  color: grey;
-}
-
-.header-up__registration-link:not(:last-child) .header-up__registration-link::after {
-  content: "/";
-  margin: 0px 12px;
-}
-
-.header-bottom {
-  background-color: #0F0F0F;
-  max-height: 80px;
-}
-
-.header-bottom__conteiner {
-  padding: 0px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.haeder-bottom__left-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 25px 0px 30px 0px;
-}
-
-.haeder-bottom__right-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 32px 0px 30px 0px;
+.header__nav-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  text-transform: uppercase;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #464649;
 }
 
-.header-bottom__nav .header-bottom__link {
+.header__nav-button-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media (max-width: 1075px) {
+  .header__nav-button-link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .header__nav-button {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__nav-button-link:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .header__nav-button {
+    margin-left: 50px;
+  }
+}
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 352px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__contacts-number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header__contacts-call {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #16467D;
+  border-radius: 6px;
+  padding: 12px 24px;
+  background-color: #16467D;
   color: white;
 }
 
-.header-bottom__link:not(:last-child) {
-  margin-right: 40px;
+.header__contacts-number::before {
+  content: url(../../img/header/phone.jpg);
+  margin-right: 10px;
 }
 
-.header-bottom__icon {
-  margin-left: 60px;
-}
+@media (max-width: 945px) {
+  .header__contacts {
+    display: none;
+  }
 
-.header-bottom__icon-link:not(:last-child) {
-  margin-right: 40px;
+  .header__nav-button-link:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .header__nav-button {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+}
+.main-screen {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  position: relative;
 }
 
 .page {
-  margin-top: 124px;
-}
-
-.main-block {
-  min-height: 810px;
-  width: 100%;
+  position: relative;
+  margin-top: 80px;
   color: white;
-  background-image: url(../img/main-block-intro/Rectangle3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 0px 5px;
 }
 
-.main-block__conteiner {
-  min-height: 810px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.intro__body {
+  padding: 146px 0px 222px 0px;
+  word-wrap: normal;
 }
 
-.main-block__body {
+.intro__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 94px;
+  word-wrap: break-word;
+}
+
+.intro__text {
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.intro__button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.intro__buttnon-link {
+  border: 1px solid #16467D;
+  padding: 19px 117px 19px 117px;
+  background-color: #16467D;
+  color: white;
+}
+
+._ibg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 800px;
+  z-index: -100;
+}
+
+@media (max-width: 700px) {
+  .intro__title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+  }
+}
+.page__main-brends {
+  height: 170px;
+}
+
+.brends__conteiner {
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,12 +305,54 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.brends__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #464649;
+}
+
+.brends__name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.main-block__square {
+.brends__name-img {
+  margin-bottom: 15px;
+}
+
+.brends__name-img:not(:last-child) {
+  margin-right: 92px;
+}
+
+.page__main-services {
+  height: 761px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.services__conteiner {
+  width: 100%;
+}
+
+.services__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,37 +360,120 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 320px;
-  width: 320px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 173px;
-  border: 5px solid white;
 }
 
-.main-block__square-titel {
-  font-family: "Post No Bills Jaffna";
-  font-size: 64px;
+.services__title::after {
+  content: url(../../img/main-services/line.png);
 }
 
-.main-block__square-city {
-  font-size: 22px;
+.services__work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main-block__square-line {
-  margin-top: 5px;
-  margin-bottom: 7px;
+.services__work-exaple-one {
+  width: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 80px;
 }
 
-.main-block__text {
-  font-family: "PT Sans";
+.exaple-one__img {
+  margin: 30px 0px 20px 0px;
+}
+
+.exaple-one__img img {
+  width: 100%;
+}
+
+.exaple-one__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.example-one__text {
+  color: #464649;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  text-align: center;
-  line-height: 150%;
-  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.example-one__button {
+  margin-top: 32px;
+}
+
+.services__work-exaple-two {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.example-one__button-link {
+  border: 1px solid #16467D;
+  padding: 12px 54px 12px 54px;
+  background-color: #16467D;
+  color: white;
+  border-radius: 6px;
+}
+
+.exaple-two {
+  width: 100%;
+}
+
+.exaple-two__img {
+  margin: 30px 0px 20px 0px;
+}
+
+.exaple-two__img img {
+  width: 100%;
+}
+
+.exaple-two__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.example-two__text {
+  color: #464649;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.example-two__button {
+  margin-top: 32px;
+}
+
+.example-two__button-link {
+  border: 1px solid #16467D;
+  padding: 12px 54px 12px 54px;
+  background-color: #16467D;
+  color: white;
+  border-radius: 6px;
+}
+
+@media (max-width: 885px) {
+  .services__title {
+    text-align: center;
+  }
 }
