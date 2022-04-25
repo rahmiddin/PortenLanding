@@ -234,7 +234,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-top: 80px;
   color: white;
-  padding: 0px 5px;
 }
 
 .page__main-intro {
@@ -243,6 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80% 0;
+  padding: 0px 5px;
 }
 
 .intro__body {
