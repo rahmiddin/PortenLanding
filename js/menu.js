@@ -1,8 +1,6 @@
-$(document).ready(function() {
-	$('.menu-burger__header').click(function(){
-        $('.menu-burger__header').toggleClass('open-menu');
-        $('.header__nav-button').toggleClass('open-menu');
-        $('.header__contacts').toggleClass('open-menu');
-        $('body').toggleClass('fixed-page');
-	});
-});
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu_nav');
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
